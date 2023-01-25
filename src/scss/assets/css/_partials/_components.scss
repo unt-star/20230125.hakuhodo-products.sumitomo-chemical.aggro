@@ -130,19 +130,70 @@ $path: "../img/";
 }
 
 .bl_section_ttl_sm {
-  margin-top: vw(26);
+  margin-top: vw(40);
   margin-right: auto;
   margin-left: auto;
   font-size: 0;
 
   @include breakpoint-up(md) {
-    margin-top: liq(10);
+    margin-top: liq(12);
   }
 }
 
 .bl_section_ttl_bg {
   margin-right: auto;
   margin-left: auto;
+}
+
+// テキストコンテンツ
+.bl_txt_cont {
+  .bl_txt {
+    font-size: vw(25);
+    line-height: lh(25, 48);
+
+    @include breakpoint-up(md) {
+      font-size: liq(14);
+      line-height: lh(14, 30);
+    }
+  }
+}
+
+.bl_contents_ttl_cont {
+  font-weight: bold;
+}
+
+.bl_contents_ttl {
+  position: relative;
+  padding-left: vw(16);
+  font-size: vw(40);
+  line-height: lh(40, 66);
+
+  @include breakpoint-up(md) {
+    padding-left: liq(30);
+    font-size: liq(30);
+    line-height: lh(30, 52);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: vw(-6);
+    left: 0;
+    z-index: 1;
+    width: vw(52);
+    height: vw(52);
+    background-image: url(#{$path}icon_contents_ttl.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include breakpoint-up(md) {
+      top: 0;
+      width: liq(42);
+      height: liq(42);
+    }
+  }
 }
 
 // images
@@ -212,11 +263,11 @@ $path: "../img/";
 }
 
 .link_txt {
-  margin-right: vw(16);
+  margin-right: vw(24);
   transition: opacity 0.3s linear;
 
   @include breakpoint-up(md) {
-    margin-right: liq(10);
+    margin-right: liq(8);
   }
 }
 
@@ -279,5 +330,34 @@ $path: "../img/";
       width: liq(8);
       height: liq(7);
     }
+  }
+}
+
+.bl_img_three_blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bl_img_three_blocks_item {
+  flex-shrink: 0;
+  width: 100%;
+
+  @include breakpoint-up(md) {
+    width: liq(304);
+  }
+
+  &:not(:first-child) {
+    @include breakpoint-down(sm) {
+      margin-top: vw(24);
+      width: vw(312);
+    }
+  }
+}
+
+.bl_figure_three_blocks {
+  @include breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
   }
 }

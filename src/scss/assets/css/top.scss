@@ -104,212 +104,6 @@ $path: "../img/";
   }
 }
 
-.footer_head {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
-  width: vw(654);
-
-  @include breakpoint-up(md) {
-    width: auto;
-  }
-}
-
-.bl_fooer_nav {
-  @include breakpoint-up(md) {
-    display: flex;
-    margin-top: liq(12);
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: 1100px) {
-    margin-top: 0;
-  }
-}
-
-.bl_footer_nav_list {
-  position: relative;
-  font-size: vw(24);
-  line-height: lh(24, 56);
-
-  @include breakpoint-up(md) {
-    font-size: liq(15);
-  }
-
-  @media screen and (min-width: 1100px) {
-    font-size: liq(12);
-    line-height: lh(12, 24);
-  }
-
-  > a {
-    display: inline-flex;
-    margin: vw(-8);
-    padding: vw(8);
-    color: $color-white;
-    text-decoration: none;
-    transition: opacity 0.3s linear;
-
-    @include breakpoint-up(md) {
-      margin: 0 liq(-8);
-      padding: 0 liq(8);
-    }
-  }
-
-  @include breakpoint-up(md) {
-    &:hover {
-      > a {
-        opacity: 0.6;
-      }
-    }
-  }
-}
-
-.bl_footer_nav_list+.bl_footer_nav_list {
-  @include breakpoint-up(md) {
-    margin-left: liq(70);
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 1px;
-    background-color: $color-white;
-
-    @include breakpoint-up(md) {
-      left: liq(-32);
-      height: liq(16);
-    }
-
-    @media screen and (min-width: 1100px) {
-      left: liq(-24);
-      height: liq(8);
-    }
-
-  }
-}
-
-.footer_foot {
-  position: relative;
-  margin-top: vw(30);
-  padding-top: vw(18);
-  padding-bottom: vw(20);
-
-  @include breakpoint-up(md) {
-    margin-top: 0;
-    padding-top: liq(30);
-    padding-bottom: liq(30);
-  }
-
-  @media screen and (min-width: 1100px) {
-    padding-top: liq(19);
-    padding-bottom: liq(19);
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 1px;
-    background-color: rgba(#748295, 0.3);
-    mix-blend-mode: multiply;
-
-    @include breakpoint-up(md) {
-      display: none;
-    }
-  }
-}
-
-.footer_foot_inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
-  width: vw(654);
-
-  @include breakpoint-up(md) {
-    flex-direction: column;
-  }
-
-  @media screen and (min-width: 1100px) {
-    flex-direction: row;
-    padding-right: liq(100);
-    padding-left: liq(100);
-    width: liq(1200);
-  }
-
-  > div {
-    @include breakpoint-up(md) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    @media screen and (min-width: 1100px) {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-right: liq(80);
-      width: 100%;
-    }
-  }
-}
-
-.un_footer_logo {
-  margin-left: vw(-14);
-  width: vw(199);
-
-  @include breakpoint-up(md) {
-    margin-left: 0;
-    width: liq(158);
-  }
-
-  @media screen and (min-width: 1100px) {
-    margin-left: liq(-12);
-    width: liq(134);
-  }
-
-  > a {
-    display: block;
-    transition: opacity 0.1s linear;
-
-    &:hover {
-      @include breakpoint-up(md) {
-        opacity: 0.8;
-      }
-    }
-  }
-}
-
-.un_copy {
-  font-size: vw(19);
-  line-height: lh(19, 36);
-  font-weight: bold;
-  color: $color-white;
-
-  @include breakpoint-up(md) {
-    margin-top: liq(20);
-    font-size: liq(14);
-    line-height: lh(10, 20);
-
-  }
-
-  @media screen and (min-width: 1100px) {
-    margin-top: 0;
-    font-size: liq(10);
-  }
-}
 
 .un_pagetop {
   display: flex;
@@ -603,5 +397,231 @@ $path: "../img/";
     top: 0;
     bottom: auto;
     height: 100%;
+  }
+}
+
+
+
+/* --------------------------------
+  バイオラショナルへの取組み
+-------------------------------- */
+.section_biorational {
+  padding-top: vw(220);
+  padding-bottom: vw(202);
+
+  @include breakpoint-up(md) {
+    padding-top: liq(190);
+    padding-bottom: liq(142);
+  }
+}
+
+.un_biorational_section_ttl {
+  width: vw(416);
+
+  @include breakpoint-up(md) {
+    width: liq(460);
+  }
+}
+
+.un_biorational_ttl_sm {
+  width: vw(264);
+
+  @include breakpoint-up(md) {
+    width: liq(176);
+  }
+}
+
+.un_section_ttl_bg_biorational {
+  margin-top: vw(-160);
+  width: vw(570);
+  height: vw(218);
+  background-color: $color-light-green;
+
+  @include breakpoint-up(md) {
+    margin-top: liq(-38);
+    width: liq(800);
+    height: liq(74);
+  }
+}
+
+.un_biorational_contents_ttl_cont {
+  margin-top: vw(90);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(68);
+  }
+
+  >.bl_contents_ttl {
+    white-space: nowrap;
+  }
+}
+
+.bl_biorational_img_three_blocks_wrapper {
+  margin-top: vw(50);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(30);
+  }
+}
+
+.un_biorational_txt_cont {
+  margin-top: vw(30);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(22);
+  }
+}
+
+/* --------------------------------
+  BT剤について
+-------------------------------- */
+
+.section_bt_agent {
+  padding-top: vw(190);
+  padding-bottom: vw(190);
+  background-color: $color-light-cyan;
+
+  @include breakpoint-up(md) {
+    padding-top: liq(160);
+    padding-bottom: liq(176);
+  }
+}
+
+.un_bt_agent_ttl {
+  width: vw(518);
+
+  @include breakpoint-up(md) {
+    width: liq(698);
+  }
+}
+
+.un_bt_agent_ttl_sm {
+  width: vw(490);
+
+  @include breakpoint-up(md) {
+    width: liq(327);
+  }
+}
+
+.un_section_ttl_bg_bt_agent {
+  margin-top: vw(-212);
+  width: vw(570);
+  height: vw(268);
+  background-color: $color-cyan;
+
+  @include breakpoint-up(md) {
+    margin-top: liq(-40);
+    width: liq(800);
+    height: liq(74);
+  }
+}
+
+.un_bt_agent_imgWrapper {
+  margin-top: vw(102);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(80);
+  }
+}
+
+.un_bt_agent_txt_cont {
+  margin-top: vw(30);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(22);
+  }
+}
+
+
+/* --------------------------------
+  BT製品紹介
+-------------------------------- */
+
+.section_bt_products {
+  padding-top: vw(190);
+  padding-bottom: vw(230);
+
+  @include breakpoint-up(md) {
+    padding-top: liq(160);
+    padding-bottom: liq(196);
+  }
+}
+
+.un_bt_products_ttl {
+  width: vw(368);
+
+  @include breakpoint-up(md) {
+    width: liq(244);
+  }
+}
+
+.un_bt_products_ttl_sm {
+  margin-top: vw(28);
+  width: vw(378);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(12);
+    width: liq(252);
+  }
+}
+
+.un_section_ttl_bg_bt_products {
+  margin-top: vw(-86);
+  width: vw(570);
+  height: vw(139);
+  background-color: $color-light-green;
+
+  @include breakpoint-up(md) {
+    margin-top: liq(-40);
+    width: liq(800);
+    height: liq(74);
+  }
+}
+
+.un_bt_products_figure_three_blocks {
+  margin-top: vw(90);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(78);
+  }
+}
+
+.bl_bt_products_figure_item {
+  @include breakpoint-up(md) {
+    width: liq(304);
+  }
+}
+
+.bl_bt_products_figure_item+.bl_bt_products_figure_item {
+  margin-top: vw(146);
+
+  @include breakpoint-up(md) {
+    margin-top: 0;
+  }
+}
+
+.bl_bt_products_figcaption {
+  font-size: vw(40);
+  line-height: lh(40, 68);
+
+  @include breakpoint-up(md) {
+    font-size: liq(26);
+    line-height: lh(26, 32);
+  }
+}
+
+.bl_bt_products_figure_img {
+  margin-top: vw(16);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(14);
+  }
+}
+
+.bl_bt_figure_link_cont {
+  margin-top: vw(42);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(28);
   }
 }
