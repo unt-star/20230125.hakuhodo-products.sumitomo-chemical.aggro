@@ -1,0 +1,283 @@
+@use "global" as *;
+
+$path: "../img/";
+/* --------------------------------
+  keyframes
+-------------------------------- */
+
+@keyframes circle_deg {
+  0% {
+    stroke-dasharray: 61px;
+    stroke-dashoffset: 61px;
+  }
+  100% {
+    stroke-dasharray: 61px;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pagetop_circle {
+  0% {
+    stroke-dasharray: 98px;
+    stroke-dashoffset: 98px;
+  }
+  100% {
+    stroke-dasharray: 98px;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes move_arrow_deg {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  16% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+    transform: translate(3px, -3px);
+  }
+  49%{
+    opacity: 0;
+    transform: translate(-3px, 3px);
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move_arrow_right {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  16% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+    transform: translateX(3px);
+  }
+  49%{
+    opacity: 0;
+    transform: translateX(-3px);
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes move_arrow_top {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  16% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  49%{
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// section_ttl
+.bl_section_ttl_cont {
+
+  &::after {
+    content: "";
+    display: block;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: vw(calc(-64 / 2));
+    width: 1px;
+    height: vw(64);
+    background-color: $color-black;
+
+    @include breakpoint-up(md) {
+      margin-top: liq(calc(-40 / 2));
+      height: liq(40);
+    }
+  }
+}
+
+.bl_section_ttl {
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0;
+}
+
+.bl_section_ttl_sm {
+  margin-top: vw(26);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0;
+
+  @include breakpoint-up(md) {
+    margin-top: liq(10);
+  }
+}
+
+.bl_section_ttl_bg {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// images
+.bl_imgWrapper {
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+  }
+}
+
+// リンク
+.bl_link {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin: vw(-8);
+  padding: vw(8);
+  font-size: vw(32);
+
+  @include breakpoint-up(md) {
+    margin: liq(-8);
+    padding: liq(8);
+    font-size: liq(20);
+    line-height: lh(20, 35);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: vw(2);
+    left: 0;
+    margin-left: vw(8);
+    width: calc(100% - vw(16));
+    height: 1px;
+    background-color: $color-gray;
+
+    @include breakpoint-up(md) {
+      bottom: liq(4);
+      left: 0;
+      margin-left: liq(8);
+      width: calc(100% - liq(16));
+    }
+  }
+
+  @include breakpoint-up(md) {
+    &:hover {
+      .link_txt {
+        opacity: 0.6;
+      }
+
+      .el_circle_deg {
+        svg path {
+          animation: circle_deg 0.4s ease-out;
+        }
+      }
+
+      .el_arrow_deg {
+        svg {
+          animation: move_arrow_deg 0.9s $easeOutQuad;
+        }
+      }
+    }
+  }
+}
+
+.link_txt {
+  margin-right: vw(16);
+  transition: opacity 0.3s linear;
+
+  @include breakpoint-up(md) {
+    margin-right: liq(10);
+  }
+}
+
+.el_link_icon {
+  position: relative;
+  margin-top: vw(-4);
+  width: vw(36);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(-4);
+    width: liq(22);
+  }
+}
+
+.el_circle_deg {
+  svg {
+    width: vw(34);
+    height: vw(34);
+
+    @include breakpoint-up(md) {
+      width: liq(22);
+      height: liq(22);
+    }
+  }
+}
+
+.el_arrow_deg {
+  display: flex;
+  position: absolute;
+  top: calc(50% + vw(2));
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include breakpoint-up(md) {
+    top: calc(50% + liq(2));
+  }
+
+  svg {
+    width: vw(10);
+    height: vw(10);
+
+    @include breakpoint-up(md) {
+      width: liq(6);
+      height: liq(6);
+    }
+  }
+}
+
+.el_arrow_right {
+  position: absolute;
+  top: calc(50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  svg {
+    width: vw(13);
+    height: vw(11);
+
+    @include breakpoint-up(md) {
+      width: liq(8);
+      height: liq(7);
+    }
+  }
+}

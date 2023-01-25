@@ -1,0 +1,44 @@
+<%
+const imageExtensionRegex = /.(gif|jpe?g|png)/
+const defaultBreakPoint = '768px'
+
+functions = {
+  webp: function (src, alt = '') {
+    const webpImageSrc = src.replace(imageExtensionRegex, '.webp');
+
+    return `
+      <picture>
+        <source srcset="${ webpImageSrc }" type="image/webp">
+        <img src="${ src }" alt="${ alt }">
+      </picture>
+    `;
+  },
+
+  responsiveImage: function (src, width_lg, height_lg, width_sm, height_sm, alt = '', breakpoint = defaultBreakPoint) {
+    const lgImageSrc = src.replace(/_sm.(gif|jpe?g|png)/, '_lg.$1');
+
+    return `
+      <picture>
+        <source srcset="${ lgImageSrc }" width="${width_lg}" height="${height_lg}" media="(min-width: ${ breakpoint })">
+        <img src="${ src }" width="${width_sm}" height="${height_sm}" alt="${ alt }" loading="lazy">
+      </picture>
+    `;
+  },
+
+  responsiveWebp: function (src, alt = '', breakpoint = defaultBreakPoint) {
+    const smImageSrc = src;
+    const lgImageSrc = src.replace(/_sm.(gif|jpe?g|png)/, '_lg.$1');
+    const webpSmImageSrc = src.replace(imageExtensionRegex, '.webp');
+    const webpLgImageSrc = lgImageSrc.replace(imageExtensionRegex, '.webp')
+
+    return `
+      <picture>
+        <source srcset="${ webpLgImageSrc }" media="(min-width: ${ breakpoint })" type="image/webp">
+        <source srcset="${ lgImageSrc }" media="(min-width: ${ breakpoint })">
+        <source srcset="${ webpSmImageSrc }" type="image/webp">
+        <img src="${ smImageSrc }" alt="${ alt }">
+      </picture>
+    `;
+  }
+}
+%>

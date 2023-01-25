@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*
+* main.css
+*
+*/
+
+// Common Settings
+@use "reset";
+@use "base";
+@use "components";
+@use "utilities";
+
+// Print Settings
+@use "print";
