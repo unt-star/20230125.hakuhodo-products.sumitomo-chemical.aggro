@@ -80,7 +80,7 @@ $path: "../img/";
 }
 
 .un_header_logo_natural_products {
-  width: vw(173);
+  width: vw(138);
 
   @include breakpoint-up(md) {
     width: liq(125);
@@ -603,6 +603,7 @@ $path: "../img/";
 .bl_bt_products_figcaption {
   font-size: vw(40);
   line-height: lh(40, 68);
+  font-weight: bold;
 
   @include breakpoint-up(md) {
     font-size: liq(26);

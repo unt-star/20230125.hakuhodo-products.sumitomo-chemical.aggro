@@ -72,7 +72,7 @@
 }
 
 .un_header_logo_natural_products {
-  width: 23.0666666667vw;
+  width: 18.4vw;
 }
 @media (min-width: 768px) {
   .un_header_logo_natural_products {
@@ -635,6 +635,7 @@
 
 .bl_bt_products_figcaption {
   font-size: 5.3333333333vw;
+  font-weight: bold;
   line-height: 1.7;
 }
 @media (min-width: 768px) {
