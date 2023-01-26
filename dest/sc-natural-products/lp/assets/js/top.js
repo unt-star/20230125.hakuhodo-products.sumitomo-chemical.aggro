@@ -14,10 +14,12 @@
     ScrollTrigger.refresh(); 
 
     var _init = function _init() {
-      fadeUp();
-      kv_anim();
-      pageTop();
-      modal();
+      window.addEventListener('DOMContentLoaded', function () {
+        fadeUp();
+        kv_anim();
+        pageTop();
+        modal();
+      });
     };
 
     var fadeUp = function fadeUp() {

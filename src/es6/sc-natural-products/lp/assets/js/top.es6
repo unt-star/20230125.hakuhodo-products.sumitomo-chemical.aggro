@@ -17,10 +17,12 @@
 
     // 初期化
     const _init = function() {
-      fadeUp();
-      kv_anim();
-      pageTop();
-      modal();
+      window.addEventListener('DOMContentLoaded', () => {
+        fadeUp();
+        kv_anim();
+        pageTop();
+        modal();
+      });
     };
 
     const fadeUp = () => {
