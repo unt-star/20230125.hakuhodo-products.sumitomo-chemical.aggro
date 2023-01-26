@@ -15,6 +15,7 @@
 
   <!-- lib -->
   <script src="./assets/js/vendor/jquery-3.6.0.min.js" defer></script>
+  <script src="./assets/js/vendor/micromodal.min.js" defer></script>
   <script src="./assets/js/vendor/gsap-3.11.3.min.js" defer></script>
   <script src="./assets/js/vendor/gsap-scrollTrigger-3.11.3.min.js" defer></script>
   <script src="./assets/js/main.js" defer></script>
@@ -83,7 +84,7 @@
           </div>
 
           <div class="un_bt_agent_contents js_fadeUp_targer">
-            <div class="bl_imgWrapper un_bt_agent_imgWrapper">
+            <div class="bl_imgWrapper un_bt_agent_imgWrapper bl_videoWrapper" data-micromodal-trigger="modal_global_efforts">
               <%- functions.responsiveImage('./assets/img/thumb_bt_agent_sm.jpg', 1000, 350, 654, 362, '') %>
             </div>
 
@@ -207,7 +208,31 @@
     </main>
 
     <%- include(relativePath + '_partials/_footer')%>
-  </div>
 
+    <!-- GlobalEfforts modal -->
+    <div id="modal_global_efforts" class="bl_video_modal" aria-hidden="true">
+      <div tabindex="-1" data-micromodal-close>
+        <div role="dialog">
+          <div class="bl_video_modal_inner">
+            <div class="bl_video_modal_contents">
+
+              <div class="bl_video_modal_head">
+                <button class="bl_video_modal_close js_modal_close bl_imgWrapper" aria-label="Close modal" data-micromodal-close>
+                  <img src="./assets/img/icon_modal_close_lg.png" width="32" height="32" alt="">
+                </button>
+              </div>
+
+              <div class="bl_video_container">
+                <div class="bl_video_modal_slide">
+                  <video src="./assets/movie/dummy_video.mp4#t=0.001" controls></video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>

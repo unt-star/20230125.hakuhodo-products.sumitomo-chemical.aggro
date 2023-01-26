@@ -495,6 +495,44 @@ a[href^="tel:"]:hover {
   pointer-events: none;
 }
 
+.bl_videoWrapper {
+  overflow: hidden;
+  position: relative;
+}
+.bl_videoWrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 24.1333333333vw;
+  height: 24.1333333333vw;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/icon_play_sm.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .bl_videoWrapper::after {
+    width: min(8.1259150805vw, 111px);
+    height: min(8.1259150805vw, 111px);
+    background-image: url(../img/icon_play_lg.png);
+  }
+}
+.bl_videoWrapper img {
+  transition: transform 0.3s ease;
+}
+@media (min-width: 768px) {
+  .bl_videoWrapper:hover {
+    cursor: pointer;
+  }
+  .bl_videoWrapper:hover img {
+    transform: scale(1.04);
+  }
+}
+
 .bl_link {
   display: inline-flex;
   align-items: center;

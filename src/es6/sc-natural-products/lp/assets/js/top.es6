@@ -4,7 +4,7 @@
  * @date 2023-02-02
  */
 
-/* global gsap, ScrollTrigger */
+/* global gsap, ScrollTrigger, MicroModal */
 
 (function($) {
   const sumitomo_chemical_aggro = window.sumitomo_chemical_aggro || {};
@@ -17,6 +17,8 @@
     const _init = function() {
       fadeUp();
       kv_anim();
+      pageTop();
+      modal();
     };
 
     const fadeUp = () => {
@@ -97,6 +99,44 @@
       } else {
         window_size_lg();
       }
+    };
+
+    const pageTop = () => {
+      const target = document.querySelector('.js_pagetop');
+
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: '.bl_section_ttl_cont',
+          start: '0% 100%',
+          onEnter: () => {
+            target.classList.add('is-show');
+          },
+          onLeaveBack: () => {
+            target.classList.remove('is-show');
+          },
+        },
+      });
+    };
+
+
+    const modal = () => {
+      MicroModal.init({
+        disableFocus: true,
+        awaitOpenAnimation: true,
+        awaitCloseAnimation: true,
+        disableScroll: true,
+        onClose: (e) => {
+          if(e.querySelector('video')) {
+            Array.from(e.querySelectorAll('video')).forEach((el) => {
+              el.pause();
+            });
+          }
+
+          if(e.classList.contains('js_biorational_modal')) {
+            this.global_modal_slide_container.Components.Autoplay.play();
+          }
+        }
+      });
     };
 
     return {

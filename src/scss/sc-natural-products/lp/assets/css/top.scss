@@ -119,11 +119,14 @@ $path: "../img/";
 
 
 .un_pagetop {
+  position: fixed;
+  z-index: 5;
+  right: vw(20);
+  bottom: vw(20);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: vw(-14);
   padding: vw(16) vw(50) vw(24);
   text-align: center;
   text-decoration: none;
@@ -133,8 +136,6 @@ $path: "../img/";
   transition: opacity 0.3s linear, visibility 0.3s linear;
 
   @include breakpoint-up(md) {
-    position: fixed;
-    z-index: 5;
     bottom: liq(25);
     right: liq(25);
     margin-right: liq(-7);
@@ -641,4 +642,206 @@ $path: "../img/";
   @include breakpoint-up(md) {
     margin-top: liq(28);
   }
+}
+
+/* --------------------------------
+  modal
+-------------------------------- */
+.bl_video_modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &.is-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color-black, 0.9);
+    pointer-events: auto;
+  }
+
+  .bl_video_modal_inner {
+    display: flex;
+    align-items: center;
+    margin-top: vw(-64);
+    width: vw(654);
+
+    @include breakpoint-up(md) {
+      margin-top: 0;
+      width: liq(1200);
+    }
+
+    @media screen and (max-height: 800px) and (min-width: 768px) {
+      width: auto;
+    }
+  }
+
+  .bl_video_modal_contents {
+    width: 100%;
+
+    @media screen and (max-height: 800px) and (min-width: 768px) {
+      width: 100vh;
+    }
+  }
+
+  .bl_video_modal_head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    height: vw(64);
+
+    @include breakpoint-up(md) {
+      margin-bottom: liq(16);
+      height: liq(42);
+    }
+
+    @media screen and (max-height: 800px) and (min-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  // スライダー
+  .splide__arrows{
+    position: relative;
+    z-index: 1;
+    top: auto;
+    left: auto;
+    display: flex;
+    align-items: center;
+    width: vw(308);
+    transform: translate(0, 0);
+
+    @include breakpoint-up(md) {
+      width: liq(198);
+    }
+  }
+
+  .bl_video_modal_slide_pagination {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-white;
+    font-size: vw(24);
+    line-height: 1;
+
+    @include breakpoint-up(md) {
+      font-size: liq(20);
+    }
+
+    > span {
+      margin-right: liq(8);
+      margin-left: liq(8);
+    }
+  }
+
+  .bl_video_modal_close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: vw(-8);
+    transform: translateY(-50%);
+    padding: vw(10);
+    width: vw(46);
+    height: vw(46);
+
+    @include breakpoint-up(md) {
+      right: liq(4);
+      padding: liq(5);
+      width: liq(47);
+      height: liq(47);
+    }
+  }
+
+  .bl_video_container {
+    position: relative;
+    width: 100%;
+    height: vw(368);
+
+    @include breakpoint-up(md) {
+      height: liq(677);
+    }
+
+    @media screen and (max-height: 800px) and (min-width: 768px) {
+      height: auto;
+    }
+  }
+
+  .bl_video_modal_splide_track {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bl_video_modal_slide {
+    @include breakpoint-up(md) {
+      height: 100%;
+    }
+
+    @media screen and (max-height: 800px) and (min-width: 768px) {
+      margin-right: auto !important;
+      margin-left: auto !important;
+      height: 0;
+      padding-top: 56.25%;
+    }
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+
+    &[poster]{
+      height:100%;
+      width:100%;
+      object-fit: cover;
+    }
+
+    @media screen and (max-height: 800px) and (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@keyframes mmfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mmfadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.bl_video_modal[aria-hidden="false"] {
+  animation: mmfadeIn .4s ease;
+}
+
+.bl_video_modal[aria-hidden="true"] {
+  animation: mmfadeOut .4s ease;
+}
+
+.bl_video_modal {
+  will-change: transform;
 }

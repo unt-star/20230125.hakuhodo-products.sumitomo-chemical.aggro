@@ -46,6 +46,7 @@
 
   <!-- lib -->
   <script src="./assets/js/vendor/jquery-3.6.0.min.js" defer="defer"></script>
+  <script src="./assets/js/vendor/micromodal.min.js" defer="defer"></script>
   <script src="./assets/js/vendor/gsap-3.11.3.min.js" defer="defer"></script>
   <script src="./assets/js/vendor/gsap-scrollTrigger-3.11.3.min.js" defer="defer"></script>
   <script src="./assets/js/main.js" defer="defer"></script>
@@ -148,7 +149,7 @@
             <div class="bl_section_ttl_bg un_section_ttl_bg_bt_agent"></div>
           </div>
           <div class="un_bt_agent_contents js_fadeUp_targer">
-            <div class="bl_imgWrapper un_bt_agent_imgWrapper">
+            <div class="bl_imgWrapper un_bt_agent_imgWrapper bl_videoWrapper" data-micromodal-trigger="modal_global_efforts">
               <picture>
                 <source srcset="./assets/img/thumb_bt_agent_lg.jpg" width="1000" height="350" media="(min-width: 768px)"><img src="./assets/img/thumb_bt_agent_sm.jpg" width="654" height="362" alt="" loading="lazy">
               </picture>
@@ -221,7 +222,30 @@
         </div>
       </section>
     </main>
-    <footer class="ly_footer"><small class="un_footer_copy">Copyright&copy;&nbsp;2002-2023&nbsp;Sumitomo&nbsp;Chemical&nbsp;Co.,&nbsp;Ltd.</small></footer>
+    <footer class="ly_footer"><small class="un_footer_copy">Copyright&copy;&nbsp;2002-2023&nbsp;Sumitomo&nbsp;Chemical&nbsp;Co.,&nbsp;Ltd.</small></footer><a href="#top" class="un_pagetop js_pagetop"><span class="un_pagetop_icon"><span class="un_icon_pagetop"><span class="un_pagetop_circle"><svg viewBox="0 0 36.776 36.776">
+              <path d="M2251.726,9674.226a17.366,17.366,0,1,1-8.026-7.343" transform="translate(-2218.176 -9664.356)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            </svg> </span><span class="un_pagetop_arrow"><svg viewBox="0 0 13 14.093">
+              <g transform="translate(-2230.376 -9675.98)">
+                <path d="M2231.083,9683.135l5.74-5.74,5.74,5.74" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" />
+                <line y2="12.8" transform="translate(2236.823 9677.273)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" />
+              </g>
+            </svg> </span></span></span><span class="un_pagetop_txt">PAGE<br>TOP</span> </a>
+
+    <!-- GlobalEfforts modal -->
+    <div id="modal_global_efforts" class="bl_video_modal" aria-hidden="true">
+      <div tabindex="-1" data-micromodal-close>
+        <div role="dialog">
+          <div class="bl_video_modal_inner">
+            <div class="bl_video_modal_contents">
+              <div class="bl_video_modal_head"><button class="bl_video_modal_close js_modal_close bl_imgWrapper" aria-label="Close modal" data-micromodal-close><img src="./assets/img/icon_modal_close_lg.png" width="32" height="32" alt=""></button></div>
+              <div class="bl_video_container">
+                <div class="bl_video_modal_slide"><video src="./assets/movie/dummy_video.mp4#t=0.001" controls></video></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
