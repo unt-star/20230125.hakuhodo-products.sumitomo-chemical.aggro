@@ -76,7 +76,7 @@
 }
 @media (min-width: 768px) {
   .un_header_logo_natural_products {
-    width: min(9.1508052709vw, 125px);
+    width: min(7.2474377745vw, 99px);
   }
 }
 
@@ -90,12 +90,26 @@
 }
 
 .ly_footer {
-  padding-top: 5.3333333333vw;
-  background-color: #788798;
+  padding-bottom: 12.8vw;
+  background-color: #eee;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .ly_footer {
-    padding-top: 0;
+    padding-top: min(0.7320644217vw, 10px);
+    padding-bottom: min(1.0248901903vw, 14px);
+  }
+}
+
+.un_footer_copy {
+  margin-left: -6.9333333333vw;
+  font-size: 10px;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .un_footer_copy {
+    margin-left: 0;
+    font-size: min(0.878477306vw, 12px);
   }
 }
 
@@ -501,7 +515,7 @@
 -------------------------------- */
 .section_bt_agent {
   padding-top: 25.3333333333vw;
-  padding-bottom: 25.3333333333vw;
+  padding-bottom: 26.6666666667vw;
   background-color: #bad3d7;
 }
 @media (min-width: 768px) {

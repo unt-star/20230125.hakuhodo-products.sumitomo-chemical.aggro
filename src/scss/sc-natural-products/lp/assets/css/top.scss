@@ -83,7 +83,7 @@ $path: "../img/";
   width: vw(138);
 
   @include breakpoint-up(md) {
-    width: liq(125);
+    width: liq(99);
   }
 }
 
@@ -96,11 +96,24 @@ $path: "../img/";
 }
 
 .ly_footer {
-  padding-top: vw(40);
-  background-color: $color-gray2;
+  padding-bottom: vw(96);
+  background-color: #eee;
+  text-align: center;
 
   @include breakpoint-up(md) {
-    padding-top: 0;
+    padding-top: liq(10);
+    padding-bottom: liq(14);
+  }
+}
+
+.un_footer_copy {
+  margin-left: vw(-52);
+  font-size: 10px;
+  line-height: 1;
+
+  @include breakpoint-up(md) {
+    margin-left: 0;
+    font-size: liq(12);
   }
 }
 
@@ -478,7 +491,7 @@ $path: "../img/";
 
 .section_bt_agent {
   padding-top: vw(190);
-  padding-bottom: vw(190);
+  padding-bottom: vw(200);
   background-color: $color-light-cyan;
 
   @include breakpoint-up(md) {
