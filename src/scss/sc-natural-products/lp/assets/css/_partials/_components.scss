@@ -164,7 +164,7 @@ $path: "../img/";
 
 .bl_contents_ttl {
   position: relative;
-  padding-left: vw(16);
+  padding-left: vw(28);
   font-size: vw(40);
   line-height: lh(40, 66);
 
@@ -403,5 +403,24 @@ $path: "../img/";
   @include breakpoint-up(md) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+
+// 注意書き
+.bl_caution {
+  .bl_caution_list {
+    display: flex;
+    font-size: vw(21);
+    line-height: lh(21, 36);
+
+    @include breakpoint-up(md) {
+      font-size: liq(11);
+      line-height: lh(11, 16);
+    }
+
+    &::before {
+      content: "＊";
+    }
   }
 }

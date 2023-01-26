@@ -78,14 +78,16 @@ $path: "../img/";
   width: vw(138);
 
   @include breakpoint-up(md) {
-    width: liq(99);
+    width: liq(100);
   }
 }
 
 .un_header_logo_sumitomo_chemical {
+  margin-top: vw(-4);
   width: vw(167);
 
   @include breakpoint-up(md) {
+    margin-top: liq(-2);
     width: liq(130);
   }
 }
@@ -420,7 +422,7 @@ $path: "../img/";
 
   @include breakpoint-up(md) {
     padding-top: liq(190);
-    padding-bottom: liq(142);
+    padding-bottom: liq(176);
   }
 }
 
@@ -494,7 +496,7 @@ $path: "../img/";
   background-color: $color-light-cyan;
 
   @include breakpoint-up(md) {
-    padding-top: liq(160);
+    padding-top: liq(158);
     padding-bottom: liq(176);
   }
 }

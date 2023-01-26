@@ -455,7 +455,7 @@ a[href^="tel:"]:hover {
 
 .bl_contents_ttl {
   position: relative;
-  padding-left: 2.1333333333vw;
+  padding-left: 3.7333333333vw;
   font-size: 5.3333333333vw;
   line-height: 1.65;
 }
@@ -684,6 +684,21 @@ a[href^="tel:"]:hover {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.bl_caution .bl_caution_list {
+  display: flex;
+  font-size: 2.8vw;
+  line-height: 1.7142857143;
+}
+@media (min-width: 768px) {
+  .bl_caution .bl_caution_list {
+    font-size: min(0.8052708638vw, 11px);
+    line-height: 1.4545454545;
+  }
+}
+.bl_caution .bl_caution_list::before {
+  content: "＊";
 }
 
 /* ------------------------
