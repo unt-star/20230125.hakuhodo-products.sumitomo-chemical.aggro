@@ -10,7 +10,8 @@
   sumitomo_chemical_aggro.Top = function () {
     var _this = this;
 
-    gsap.registerPlugin(ScrollTrigger); 
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.refresh(); 
 
     var _init = function _init() {
       fadeUp();

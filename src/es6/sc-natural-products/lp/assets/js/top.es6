@@ -11,6 +11,8 @@
 
   sumitomo_chemical_aggro.Top = function() {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.refresh();
+
 
 
     // 初期化
