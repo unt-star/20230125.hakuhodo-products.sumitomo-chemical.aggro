@@ -539,7 +539,9 @@ a[href^="tel:"]:hover {
   position: relative;
   margin: -1.0666666667vw;
   padding: 1.0666666667vw;
+  text-decoration: none;
   font-size: 4.2666666667vw;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .bl_link {
@@ -678,7 +680,7 @@ a[href^="tel:"]:hover {
 }
 
 @media (min-width: 768px) {
-  .bl_figure_three_blocks {
+  .bl_three_item_list {
     display: flex;
     justify-content: space-between;
   }

@@ -84,7 +84,7 @@
           </div>
 
           <div class="un_bt_agent_contents js_fadeUp_targer">
-            <div class="bl_imgWrapper un_bt_agent_imgWrapper bl_videoWrapper" data-micromodal-trigger="modal_global_efforts">
+            <div class="bl_imgWrapper un_bt_agent_imgWrapper">
               <%- functions.responsiveImage('./assets/img/thumb_bt_agent_sm.jpg', 1000, 350, 654, 362, '') %>
             </div>
 
@@ -109,15 +109,15 @@
             <div class="bl_section_ttl_bg un_section_ttl_bg_bt_products"></div>
           </div>
 
-          <ul class="bl_figure_three_blocks un_bt_products_figure_three_blocks js_fadeUp_targer">
-            <li class="bl_figure_item bl_bt_products_figure_item">
-              <figure>
-                <figcaption class="bl_figcaption bl_bt_products_figcaption">ゼンターリ</figcaption>
-                <div class="bl_imgWrapper bl_figure_img bl_bt_products_figure_img">
+          <ul class="bl_three_item_list un_bt_products_three_item_list js_fadeUp_targer">
+            <li class="bl_bt_products_item">
+              <p class="bl_bt_products_name">ゼンターリ</p>
+              <a href="https://www.i-nouryoku.com/prod/search/nouyaku/detail/1/78" class="bl_bt_products_link" target="_blank" rel="noopener">
+                <span class="bl_imgWrapper bl_bt_products_list_img">
                   <img src="./assets/img/pic_bt_products_01.jpg" width="654" height="528" alt="">
-                </div>
-                <div class="bl_link_cont bl_bt_figure_link_cont">
-                  <a href="#" class="bl_link" target="_blank" rel="noopener">
+                </span>
+                <span class="bl_link_cont bl_bt_products_link_cont">
+                  <span class="bl_link" target="_blank">
                     <span class="link_txt">商品詳細はこちら</span>
                     <span class="el_link_icon">
                       <span class="el_circle_deg">
@@ -135,19 +135,19 @@
                         </svg>
                       </span>
                     </span>
-                  </a>
-                </div>
-              </figure>
+                  </span>
+                </span>
+              </a>
             </li>
 
-            <li class="bl_figure_item bl_bt_products_figure_item">
-              <figure>
-                <figcaption class="bl_figcaption bl_bt_products_figcaption">フローバックDF</figcaption>
-                <div class="bl_imgWrapper bl_figure_img bl_bt_products_figure_img">
+            <li class="bl_bt_products_item">
+              <p class="bl_bt_products_name">フローバックDF</p>
+              <a href="https://www.i-nouryoku.com/prod/search/nouyaku/detail/1/172" class="bl_bt_products_link" target="_blank" rel="noopener">
+                <span class="bl_imgWrapper bl_bt_products_list_img">
                   <img src="./assets/img/pic_bt_products_02.jpg" width="654" height="528" alt="">
-                </div>
-                <div class="bl_link_cont bl_bt_figure_link_cont">
-                  <a href="#" class="bl_link" target="_blank" rel="noopener">
+                </span>
+                <span class="bl_link_cont bl_bt_products_link_cont">
+                  <span class="bl_link" target="_blank">
                     <span class="link_txt">商品詳細はこちら</span>
                     <span class="el_link_icon">
                       <span class="el_circle_deg">
@@ -165,20 +165,19 @@
                         </svg>
                       </span>
                     </span>
-                  </a>
-                </div>
-              </figure>
+                  </span>
+                </span>
+              </a>
             </li>
 
-
-            <li class="bl_figure_item bl_bt_products_figure_item">
-              <figure>
-                <figcaption class="bl_figcaption bl_bt_products_figcaption">エスマルクDF</figcaption>
-                <div class="bl_imgWrapper bl_figure_img bl_bt_products_figure_img">
+            <li class="bl_bt_products_item">
+              <p class="bl_bt_products_name">エスマルクDF</p>
+              <a href="https://www.i-nouryoku.com/prod/search/nouyaku/detail/1/17" class="bl_bt_products_link" target="_blank" rel="noopener">
+                <span class="bl_imgWrapper bl_bt_products_list_img">
                   <img src="./assets/img/pic_bt_products_03.jpg" width="654" height="528" alt="">
-                </div>
-                <div class="bl_link_cont bl_bt_figure_link_cont">
-                  <a href="#" class="bl_link" target="_blank" rel="noopener">
+                </span>
+                <span class="bl_link_cont bl_bt_products_link_cont">
+                  <span class="bl_link" target="_blank">
                     <span class="link_txt">商品詳細はこちら</span>
                     <span class="el_link_icon">
                       <span class="el_circle_deg">
@@ -196,9 +195,9 @@
                         </svg>
                       </span>
                     </span>
-                  </a>
-                </div>
-              </figure>
+                  </span>
+                </span>
+              </a>
             </li>
           </ul>
 
@@ -209,8 +208,8 @@
 
     <%- include(relativePath + '_partials/_footer')%>
 
-    <!-- GlobalEfforts modal -->
-    <div id="modal_global_efforts" class="bl_video_modal" aria-hidden="true">
+    <%#
+    <div id="modal_bt_agents" class="bl_video_modal" aria-hidden="true">
       <div tabindex="-1" data-micromodal-close>
         <div role="dialog">
           <div class="bl_video_modal_inner">
@@ -232,6 +231,7 @@
         </div>
       </div>
     </div>
+    %>
 
   </div>
 </body>

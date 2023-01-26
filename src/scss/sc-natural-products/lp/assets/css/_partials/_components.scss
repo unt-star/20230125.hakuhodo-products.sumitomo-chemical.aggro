@@ -256,6 +256,8 @@ $path: "../img/";
   margin: vw(-8);
   padding: vw(8);
   font-size: vw(32);
+  font-weight: bold;
+  text-decoration: none;
 
   @include breakpoint-up(md) {
     margin: liq(-8);
@@ -397,7 +399,7 @@ $path: "../img/";
   }
 }
 
-.bl_figure_three_blocks {
+.bl_three_item_list {
   @include breakpoint-up(md) {
     display: flex;
     justify-content: space-between;
