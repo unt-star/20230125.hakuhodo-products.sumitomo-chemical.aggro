@@ -10,7 +10,7 @@ const cssMinify = () => {
 
   return gulp.src('build/sc-natural-products/lp/assets/css/**/*.css')
     .pipe(postcss(plugins))
-    .pipe(gulp.dest('build/assets/css/'));
+    .pipe(gulp.dest('build//sc-natural-products/lp/assets/css/'));
 };
 
 exports.cssMinify = cssMinify;
