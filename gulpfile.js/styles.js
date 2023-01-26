@@ -27,7 +27,7 @@ const styles = () => {
 
   return gulp.src('src/scss/**/*.scss', { sourcemaps: sourcemapsInit })
     .pipe(sass.sync({
-      includePaths: 'src/scss/assets/css/_partials/',
+      includePaths: 'src/scss/sc-natural-products/lp/assets/css/_partials/',
       outputStyle: 'expanded'
     }).on('error', sass.logError))
     .pipe(csscomb())

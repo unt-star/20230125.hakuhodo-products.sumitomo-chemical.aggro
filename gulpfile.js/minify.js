@@ -8,7 +8,7 @@ const cssMinify = () => {
     cssnano()
   ];
 
-  return gulp.src('build/assets/css/**/*.css')
+  return gulp.src('build/sc-natural-products/lp/assets/css/**/*.css')
     .pipe(postcss(plugins))
     .pipe(gulp.dest('build/assets/css/'));
 };
