@@ -457,12 +457,15 @@ $path: "../img/";
   }
 }
 
-.un_biorational_contents_ttl_cont {
+.un_biorational_contents {
   margin-top: vw(90);
 
   @include breakpoint-up(md) {
     margin-top: liq(68);
   }
+}
+
+.un_biorational_contents_ttl_cont {
 
   >.bl_contents_ttl {
     white-space: nowrap;
@@ -529,7 +532,7 @@ $path: "../img/";
   }
 }
 
-.un_bt_agent_imgWrapper {
+.un_bt_agent_contents {
   margin-top: vw(102);
 
   @include breakpoint-up(md) {
@@ -556,7 +559,7 @@ $path: "../img/";
 
   @include breakpoint-up(md) {
     padding-top: liq(160);
-    padding-bottom: liq(196);
+    padding-bottom: liq(195);
   }
 }
 

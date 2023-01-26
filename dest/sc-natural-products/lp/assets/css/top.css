@@ -480,14 +480,15 @@
   }
 }
 
-.un_biorational_contents_ttl_cont {
+.un_biorational_contents {
   margin-top: 12vw;
 }
 @media (min-width: 768px) {
-  .un_biorational_contents_ttl_cont {
+  .un_biorational_contents {
     margin-top: min(4.9780380673vw, 68px);
   }
 }
+
 .un_biorational_contents_ttl_cont > .bl_contents_ttl {
   white-space: nowrap;
 }
@@ -557,11 +558,11 @@
   }
 }
 
-.un_bt_agent_imgWrapper {
+.un_bt_agent_contents {
   margin-top: 13.6vw;
 }
 @media (min-width: 768px) {
-  .un_bt_agent_imgWrapper {
+  .un_bt_agent_contents {
     margin-top: min(5.8565153734vw, 80px);
   }
 }
@@ -585,7 +586,7 @@
 @media (min-width: 768px) {
   .section_bt_products {
     padding-top: min(11.7130307467vw, 160px);
-    padding-bottom: min(14.3484626647vw, 196px);
+    padding-bottom: min(14.2752562225vw, 195px);
   }
 }
 
