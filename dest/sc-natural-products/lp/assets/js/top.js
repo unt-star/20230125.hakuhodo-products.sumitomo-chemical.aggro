@@ -35,8 +35,7 @@
         },
         start: '-10% 80%',
         ease: 'Power4.easeOut',
-        once: true,
-        markers: true
+        once: true
       });
     };
 
