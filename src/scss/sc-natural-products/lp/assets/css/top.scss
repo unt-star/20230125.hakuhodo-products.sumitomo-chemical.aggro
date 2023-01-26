@@ -75,20 +75,22 @@ $path: "../img/";
 }
 
 .un_header_logo_natural_products {
+  margin-top: vw(-4);
   width: vw(138);
 
   @include breakpoint-up(md) {
+    margin-top: 0;
     width: liq(100);
   }
 }
 
 .un_header_logo_sumitomo_chemical {
   margin-top: vw(-4);
-  width: vw(167);
+  width: vw(218);
 
   @include breakpoint-up(md) {
-    margin-top: liq(-2);
-    width: liq(130);
+    margin-top: 0;
+    width: liq(168);
   }
 }
 

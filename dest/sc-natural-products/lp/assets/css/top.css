@@ -67,22 +67,24 @@
 }
 
 .un_header_logo_natural_products {
+  margin-top: -0.5333333333vw;
   width: 18.4vw;
 }
 @media (min-width: 768px) {
   .un_header_logo_natural_products {
+    margin-top: 0;
     width: min(7.3206442167vw, 100px);
   }
 }
 
 .un_header_logo_sumitomo_chemical {
   margin-top: -0.5333333333vw;
-  width: 22.2666666667vw;
+  width: 29.0666666667vw;
 }
 @media (min-width: 768px) {
   .un_header_logo_sumitomo_chemical {
-    margin-top: max(-0.1464128843vw, -2px);
-    width: min(9.5168374817vw, 130px);
+    margin-top: 0;
+    width: min(12.298682284vw, 168px);
   }
 }
 
