@@ -11,17 +11,18 @@
 
   sumitomo_chemical_aggro.Top = function() {
     gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.refresh();
 
+    window.addEventListener('resize', () => {
+      ScrollTrigger.refresh();
+    });
 
 
     // 初期化
     const _init = function() {
-      window.addEventListener('DOMContentLoaded', () => {
-        fadeUp();
+      window.addEventListener('load', () => {
         kv_anim();
         pageTop();
-        modal();
+        fadeUp();
       });
     };
 
@@ -38,6 +39,7 @@
         start: '-10% 80%',
         ease: 'Power4.easeOut',
         once: true,
+        markers: true,
       });
     };
 
@@ -119,27 +121,6 @@
             target.classList.remove('is-show');
           },
         },
-      });
-    };
-
-
-    const modal = () => {
-      MicroModal.init({
-        disableFocus: true,
-        awaitOpenAnimation: true,
-        awaitCloseAnimation: true,
-        disableScroll: true,
-        onClose: (e) => {
-          if(e.querySelector('video')) {
-            Array.from(e.querySelectorAll('video')).forEach((el) => {
-              el.pause();
-            });
-          }
-
-          if(e.classList.contains('js_biorational_modal')) {
-            this.global_modal_slide_container.Components.Autoplay.play();
-          }
-        }
       });
     };
 

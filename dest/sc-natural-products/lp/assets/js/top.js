@@ -8,17 +8,16 @@
   var sumitomo_chemical_aggro = window.sumitomo_chemical_aggro || {};
 
   sumitomo_chemical_aggro.Top = function () {
-    var _this = this;
-
     gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.refresh(); 
+    window.addEventListener('resize', function () {
+      ScrollTrigger.refresh();
+    }); 
 
     var _init = function _init() {
-      window.addEventListener('DOMContentLoaded', function () {
-        fadeUp();
+      window.addEventListener('load', function () {
         kv_anim();
         pageTop();
-        modal();
+        fadeUp();
       });
     };
 
@@ -36,7 +35,8 @@
         },
         start: '-10% 80%',
         ease: 'Power4.easeOut',
-        once: true
+        once: true,
+        markers: true
       });
     };
 
@@ -115,26 +115,6 @@
           },
           onLeaveBack: function onLeaveBack() {
             target.classList.remove('is-show');
-          }
-        }
-      });
-    };
-
-    var modal = function modal() {
-      MicroModal.init({
-        disableFocus: true,
-        awaitOpenAnimation: true,
-        awaitCloseAnimation: true,
-        disableScroll: true,
-        onClose: function onClose(e) {
-          if (e.querySelector('video')) {
-            Array.from(e.querySelectorAll('video')).forEach(function (el) {
-              el.pause();
-            });
-          }
-
-          if (e.classList.contains('js_biorational_modal')) {
-            _this.global_modal_slide_container.Components.Autoplay.play();
           }
         }
       });
