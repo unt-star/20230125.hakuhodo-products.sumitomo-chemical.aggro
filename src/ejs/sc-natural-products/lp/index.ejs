@@ -23,9 +23,9 @@
 </head>
 
 <body>
-  <div id="app">
-    <%- include(relativePath + '_partials/_header')%>
+  <%- include(relativePath + '_partials/_header')%>
 
+  <div class="un_wrapper">
     <main class="ly_main">
 
       <%- include(relativePath + '_components/_kv')%>
@@ -207,36 +207,56 @@
 
         </div>
       </section>
-
     </main>
 
-    <%- include(relativePath + '_partials/_footer')%>
+    <a href="#top" class="un_pagetop js_pagetop">
+      <span class="un_pagetop_icon">
+        <span class="un_icon_pagetop">
+          <span class="un_pagetop_circle">
+            <svg viewBox="0 0 36.776 36.776">
+              <path d="M2251.726,9674.226a17.366,17.366,0,1,1-8.026-7.343" transform="translate(-2218.176 -9664.356)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </span>
 
-    <%#
-    <div id="modal_bt_agents" class="bl_video_modal" aria-hidden="true">
-      <div tabindex="-1" data-micromodal-close>
-        <div role="dialog">
-          <div class="bl_video_modal_inner">
-            <div class="bl_video_modal_contents">
+          <span class="un_pagetop_arrow">
+            <svg viewBox="0 0 13 14.093">
+              <g transform="translate(-2230.376 -9675.98)">
+                <path d="M2231.083,9683.135l5.74-5.74,5.74,5.74" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+                <line y2="12.8" transform="translate(2236.823 9677.273)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+              </g>
+            </svg>
+          </span>
+        </span>
+      </span>
+      <span class="un_pagetop_txt">PAGE<br>TOP</span>
+    </a>
+  </div>
 
-              <div class="bl_video_modal_head">
-                <button class="bl_video_modal_close js_modal_close bl_imgWrapper" aria-label="Close modal" data-micromodal-close>
-                  <img src="./assets/img/icon_modal_close_lg.png" width="32" height="32" alt="">
-                </button>
-              </div>
+  <%- include(relativePath + '_partials/_footer')%>
 
-              <div class="bl_video_container">
-                <div class="bl_video_modal_slide">
-                  <video src="./assets/movie/dummy_video.mp4#t=0.001" controls></video>
-                </div>
+  <%#
+  <div id="modal_bt_agents" class="bl_video_modal" aria-hidden="true">
+    <div tabindex="-1" data-micromodal-close>
+      <div role="dialog">
+        <div class="bl_video_modal_inner">
+          <div class="bl_video_modal_contents">
+
+            <div class="bl_video_modal_head">
+              <button class="bl_video_modal_close js_modal_close bl_imgWrapper" aria-label="Close modal" data-micromodal-close>
+                <img src="./assets/img/icon_modal_close_lg.png" width="32" height="32" alt="">
+              </button>
+            </div>
+
+            <div class="bl_video_container">
+              <div class="bl_video_modal_slide">
+                <video src="./assets/movie/dummy_video.mp4#t=0.001" controls></video>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    %>
-
   </div>
+  %>
 </body>
 </html>

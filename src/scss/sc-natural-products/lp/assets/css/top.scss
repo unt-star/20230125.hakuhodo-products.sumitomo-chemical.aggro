@@ -13,6 +13,10 @@ $path: "../img/";
 /* --------------------------------
   base
 -------------------------------- */
+.un_wrapper {
+  position: relative;
+}
+
 .ly_cont {
   margin-right: auto;
   margin-left: auto;
@@ -144,6 +148,10 @@ $path: "../img/";
   &.is-show {
     opacity: 1;
     visibility: visible;
+  }
+
+  &.absolute {
+    position: absolute;
   }
 
   &:hover {

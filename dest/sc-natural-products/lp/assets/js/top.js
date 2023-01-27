@@ -117,6 +117,18 @@
           }
         }
       });
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: '.ly_footer',
+          start: '0% 100%',
+          onEnter: function onEnter() {
+            target.classList.add('absolute');
+          },
+          onLeaveBack: function onLeaveBack() {
+            target.classList.remove('absolute');
+          }
+        }
+      });
     };
 
     return {

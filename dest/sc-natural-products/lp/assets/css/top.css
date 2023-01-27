@@ -6,6 +6,10 @@
 /* --------------------------------
   base
 -------------------------------- */
+.un_wrapper {
+  position: relative;
+}
+
 .ly_cont {
   margin-right: auto;
   margin-left: auto;
@@ -140,6 +144,9 @@
 .un_pagetop.is-show {
   visibility: visible;
   opacity: 1;
+}
+.un_pagetop.absolute {
+  position: absolute;
 }
 @media (min-width: 768px) {
   .un_pagetop:hover .un_pagetop_circle {
