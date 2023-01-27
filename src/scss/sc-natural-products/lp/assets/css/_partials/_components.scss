@@ -164,7 +164,7 @@ $path: "../img/";
 
 .bl_contents_ttl {
   position: relative;
-  padding-left: vw(28);
+  padding-left: vw(14);
   font-size: vw(40);
   line-height: lh(40, 66);
 
@@ -180,7 +180,7 @@ $path: "../img/";
     position: absolute;
     top: vw(-6);
     left: 0;
-    z-index: 1;
+    z-index: -1;
     width: vw(52);
     height: vw(52);
     background-image: url(#{$path}icon_contents_ttl.svg);

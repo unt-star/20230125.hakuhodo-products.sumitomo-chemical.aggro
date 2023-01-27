@@ -455,7 +455,7 @@ a[href^="tel:"]:hover {
 
 .bl_contents_ttl {
   position: relative;
-  padding-left: 3.7333333333vw;
+  padding-left: 1.8666666667vw;
   font-size: 5.3333333333vw;
   line-height: 1.65;
 }
@@ -470,7 +470,7 @@ a[href^="tel:"]:hover {
   content: "";
   display: block;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: -0.8vw;
   left: 0;
   width: 6.9333333333vw;
