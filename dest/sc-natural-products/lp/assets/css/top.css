@@ -567,12 +567,24 @@
   }
 }
 
+.un_bt_agents {
+  margin-top: 1.3333333333vw;
+}
+@media (min-width: 768px) {
+  .un_bt_agents {
+    margin-top: min(0.6588579795vw, 9px);
+  }
+}
+.un_bt_agents .bl_caution_list {
+  line-height: 1.5238095238;
+}
+
 .un_bt_agent_txt_cont {
-  margin-top: 4vw;
+  margin-top: 3.2vw;
 }
 @media (min-width: 768px) {
   .un_bt_agent_txt_cont {
-    margin-top: min(1.6105417277vw, 22px);
+    margin-top: min(1.4641288433vw, 20px);
   }
 }
 

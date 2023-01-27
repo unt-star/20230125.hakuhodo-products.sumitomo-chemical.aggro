@@ -540,11 +540,23 @@ $path: "../img/";
   }
 }
 
-.un_bt_agent_txt_cont {
-  margin-top: vw(30);
+.un_bt_agents {
+  margin-top: vw(10);
 
   @include breakpoint-up(md) {
-    margin-top: liq(22);
+    margin-top: liq(9);
+  }
+
+  .bl_caution_list {
+    line-height: lh(21, 32);
+  }
+}
+
+.un_bt_agent_txt_cont {
+  margin-top: vw(24);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(20);
   }
 }
 
