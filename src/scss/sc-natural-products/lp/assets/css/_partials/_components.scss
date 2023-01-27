@@ -169,7 +169,7 @@ $path: "../img/";
   line-height: lh(40, 66);
 
   @include breakpoint-up(md) {
-    padding-left: liq(30);
+    padding-left: liq(18);
     font-size: liq(30);
     line-height: lh(30, 52);
   }

@@ -461,7 +461,7 @@ a[href^="tel:"]:hover {
 }
 @media (min-width: 768px) {
   .bl_contents_ttl {
-    padding-left: min(2.196193265vw, 30px);
+    padding-left: min(1.317715959vw, 18px);
     font-size: min(2.196193265vw, 30px);
     line-height: 1.7333333333;
   }
