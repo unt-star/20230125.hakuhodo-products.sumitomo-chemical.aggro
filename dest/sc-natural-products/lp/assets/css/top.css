@@ -87,8 +87,8 @@
 }
 @media (min-width: 768px) {
   .un_header_logo_sumitomo_chemical {
-    margin-top: 0;
-    width: min(12.298682284vw, 168px);
+    margin-top: max(-0.1464128843vw, -2px);
+    width: min(10.3221083455vw, 141px);
   }
 }
 

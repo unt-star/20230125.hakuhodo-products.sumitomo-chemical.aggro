@@ -93,8 +93,8 @@ $path: "../img/";
   width: vw(218);
 
   @include breakpoint-up(md) {
-    margin-top: 0;
-    width: liq(168);
+    margin-top: liq(-2);
+    width: liq(141);
   }
 }
 
