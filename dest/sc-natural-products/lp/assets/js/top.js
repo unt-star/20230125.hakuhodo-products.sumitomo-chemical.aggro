@@ -9,9 +9,11 @@
 
   sumitomo_chemical_aggro.Top = function () {
     gsap.registerPlugin(ScrollTrigger);
-    window.addEventListener('resize', function () {
-      ScrollTrigger.refresh();
-    }); 
+
+    if ($.ua.isFirefox) {
+      document.body.classList.add('ff');
+    } 
+
 
     var _init = function _init() {
       window.addEventListener('load', function () {

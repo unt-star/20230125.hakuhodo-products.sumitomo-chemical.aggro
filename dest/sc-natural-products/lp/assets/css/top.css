@@ -607,6 +607,9 @@
   .bl_introduction .el_arrow_deg {
     top: calc(50% + min(0.1464128843vw, 2px));
   }
+  .ff .bl_introduction .el_arrow_deg {
+    top: calc(50% + min(0.2196193265vw, 3px));
+  }
   .bl_introduction .el_arrow_deg svg {
     width: min(0.2928257687vw, 4px);
     height: min(0.2928257687vw, 4px);

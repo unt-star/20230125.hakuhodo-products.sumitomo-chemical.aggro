@@ -593,6 +593,10 @@ $path: "../img/";
     @include breakpoint-up(md) {
       top: calc(50% + liq(2));
 
+      .ff & {
+        top: calc(50% + liq(3));
+      }
+
       svg {
         width: liq(4);
         height: liq(4);
