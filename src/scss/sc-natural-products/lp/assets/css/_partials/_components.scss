@@ -330,6 +330,7 @@ $path: "../img/";
   svg {
     width: vw(34);
     height: vw(34);
+    overflow: visible;
 
     @include breakpoint-up(md) {
       width: liq(22);
@@ -352,6 +353,7 @@ $path: "../img/";
   svg {
     width: vw(10);
     height: vw(10);
+    overflow: visible;
 
     @include breakpoint-up(md) {
       width: liq(6);

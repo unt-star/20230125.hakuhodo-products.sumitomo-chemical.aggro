@@ -93,12 +93,99 @@
 }
 
 .ly_footer {
-  padding-bottom: 12.8vw;
-  background-color: #eee;
   text-align: center;
 }
+
+.un_footer_head {
+  padding-top: 12.5333333333vw;
+  padding-bottom: 13.3333333333vw;
+  border-top: 1px solid #ddd;
+}
 @media (min-width: 768px) {
-  .ly_footer {
+  .un_footer_head {
+    padding-top: min(2.0497803807vw, 28px);
+    padding-bottom: min(2.0497803807vw, 28px);
+  }
+}
+
+@media (min-width: 768px) {
+  .un_footer_nav_ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.bl_footer_nav_list {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .bl_footer_nav_list {
+    margin-right: min(2.196193265vw, 30px);
+    margin-left: min(2.196193265vw, 30px);
+  }
+  .bl_footer_nav_list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - min(0.0732064422vw, 1px));
+    left: max(-2.3426061493vw, -32px);
+    width: 1px;
+    height: min(0.9516837482vw, 13px);
+    transform: translateY(-50%);
+    background-color: #333;
+  }
+  .bl_footer_nav_list:last-child::before {
+    left: max(-2.196193265vw, -30px);
+  }
+  .bl_footer_nav_list:last-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - min(0.0732064422vw, 1px));
+    right: max(-2.3426061493vw, -32px);
+    width: 1px;
+    height: min(0.9516837482vw, 13px);
+    transform: translateY(-50%);
+    background-color: #333;
+  }
+}
+
+.bl_footer_nav_list + .bl_footer_nav_list {
+  margin-top: 8vw;
+}
+@media (min-width: 768px) {
+  .bl_footer_nav_list + .bl_footer_nav_list {
+    margin-top: 0;
+  }
+}
+
+.footer_nav_link {
+  display: block;
+  transition: opacity 0.3s linear;
+  font-size: 3.7333333333vw;
+  line-height: 1.1428571429;
+
+  text-underline-offset: 1.6vw;
+}
+@media (min-width: 768px) {
+  .footer_nav_link {
+    text-decoration: none;
+    font-size: min(1.0248901903vw, 14px);
+    line-height: 2.2857142857;
+
+    text-underline-offset: min(0.2928257687vw, 4px);
+  }
+  .footer_nav_link:hover {
+    opacity: 0.6;
+  }
+}
+
+.un_footer_bottom {
+  padding-bottom: 12.8vw;
+  background-color: #eee;
+}
+@media (min-width: 768px) {
+  .un_footer_bottom {
     padding-top: min(0.7320644217vw, 10px);
     padding-bottom: min(1.0248901903vw, 14px);
   }
@@ -441,6 +528,91 @@
     height: 100%;
   }
 }
+.bl_introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 14.6666666667vw;
+  padding-bottom: 15.2vw;
+  background-color: #26361c;
+}
+@media (min-width: 768px) {
+  .bl_introduction {
+    padding-top: min(5.4172767204vw, 74px);
+    padding-bottom: min(5.4172767204vw, 74px);
+  }
+}
+.bl_introduction .un_introduction_link {
+  display: inline-flex;
+  align-items: flex-end;
+  padding: 3.2vw 5.3333333333vw 2.4vw;
+  border: 1px solid #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .bl_introduction .un_introduction_link {
+    align-items: center;
+    padding: min(0.6588579795vw, 9px) min(1.1713030747vw, 16px) min(0.6588579795vw, 9px);
+  }
+  .bl_introduction .un_introduction_link:hover .un_introduction_link_txt {
+    opacity: 0.6;
+  }
+  .bl_introduction .un_introduction_link:hover .el_circle_deg svg path {
+    -webkit-animation: circle_deg 0.4s ease-out;
+            animation: circle_deg 0.4s ease-out;
+  }
+  .bl_introduction .un_introduction_link:hover .el_arrow_deg svg {
+    -webkit-animation: move_arrow_deg 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation: move_arrow_deg 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+.bl_introduction .un_introduction_link_txt {
+  display: inline-block;
+  margin-right: 2.1333333333vw;
+  transition: opacity 0.3s linear;
+  color: #fff;
+  font-size: 4vw;
+  line-height: 1.3333333333;
+}
+@media (min-width: 768px) {
+  .bl_introduction .un_introduction_link_txt {
+    margin-right: min(0.7320644217vw, 10px);
+    font-size: min(1.1713030747vw, 16px);
+    line-height: 1.875;
+  }
+}
+.bl_introduction .el_link_icon {
+  position: relative;
+  width: 4.6666666667vw;
+}
+@media (min-width: 768px) {
+  .bl_introduction .el_link_icon {
+    width: min(1.4641288433vw, 20px);
+  }
+}
+@media (min-width: 768px) {
+  .bl_introduction .el_circle_deg {
+    position: relative;
+    top: min(0.0732064422vw, 1px);
+  }
+  .bl_introduction .el_circle_deg svg {
+    width: min(1.4641288433vw, 20px);
+    height: min(1.4641288433vw, 20px);
+  }
+}
+.bl_introduction .el_arrow_deg {
+  top: calc(50% + 0.5333333333vw);
+}
+@media (min-width: 768px) {
+  .bl_introduction .el_arrow_deg {
+    top: calc(50% + min(0.1464128843vw, 2px));
+  }
+  .bl_introduction .el_arrow_deg svg {
+    width: min(0.2928257687vw, 4px);
+    height: min(0.2928257687vw, 4px);
+  }
+}
+
 /* --------------------------------
   バイオラショナルへの取組み
 -------------------------------- */

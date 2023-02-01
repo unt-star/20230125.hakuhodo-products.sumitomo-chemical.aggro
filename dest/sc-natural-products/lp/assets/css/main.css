@@ -607,6 +607,7 @@ a[href^="tel:"]:hover {
 }
 
 .el_circle_deg svg {
+  overflow: visible;
   width: 4.5333333333vw;
   height: 4.5333333333vw;
 }
@@ -630,6 +631,7 @@ a[href^="tel:"]:hover {
   }
 }
 .el_arrow_deg svg {
+  overflow: visible;
   width: 1.3333333333vw;
   height: 1.3333333333vw;
 }
