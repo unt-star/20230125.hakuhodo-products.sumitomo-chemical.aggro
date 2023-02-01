@@ -269,36 +269,40 @@ $path: "../img/";
 }
 
 .un_pagetop_circle {
-  svg {
-    width: vw(36);
-    overflow: visible;
+  display: flex;
+  width: vw(36);
+  height: vw(36);
 
-    @include breakpoint-up(md) {
-      width: liq(18);
-    }
+  @include breakpoint-up(md) {
+    width: liq(18);
+    height: liq(18);
+  }
+
+  svg {
+    width: inherit;
+    height: inherit;
+    overflow: visible;
   }
 }
 
 .un_pagetop_arrow {
   position: absolute;
-  top: calc(50% + vw(2));
+  top: 50%;
   left: 50%;
   z-index: 1;
   transform: translate(-50%, -50%);
+  width: vw(12);
+  height: vw(14);
 
   @include breakpoint-up(md) {
-    top: calc(50% + liq(1));
+    width: liq(8);
+    height: liq(10);
   }
 
   svg {
     display: flex;
-    width: vw(12);
-    height: vw(14);
-
-    @include breakpoint-up(md) {
-      width: liq(8);
-      height: liq(10);
-    }
+    width: inherit;
+    height: inherit;
   }
 }
 
@@ -601,38 +605,27 @@ $path: "../img/";
 
   .el_link_icon {
     position: relative;
-    width: vw(35);
+    top: vw(-7);
 
     @include breakpoint-up(md) {
-      width: liq(20);
+      margin-top: 0;
+      top: 0;
     }
   }
 
   .el_circle_deg {
     @include breakpoint-up(md) {
       position: relative;
-      top: liq(1);
+      width: liq(20);
+      height: liq(20);
 
-      svg {
-        width: liq(20);
-        height: liq(20);
-      }
     }
   }
 
   .el_arrow_deg {
-
-    @include breakpoint-up(md) {
-      top: calc(50% + liq(2));
-
-      .ff & {
-        top: calc(50% + liq(3));
-      }
-
-      svg {
-        width: liq(4);
-        height: liq(4);
-      }
+    svg {
+      width: liq(4);
+      height: liq(4);
     }
   }
 }

@@ -257,38 +257,42 @@
   position: relative;
 }
 
-.un_pagetop_circle svg {
-  overflow: visible;
+.un_pagetop_circle {
+  display: flex;
   width: 4.8vw;
+  height: 4.8vw;
 }
 @media (min-width: 768px) {
-  .un_pagetop_circle svg {
+  .un_pagetop_circle {
     width: min(1.317715959vw, 18px);
+    height: min(1.317715959vw, 18px);
   }
+}
+.un_pagetop_circle svg {
+  overflow: visible;
+  width: inherit;
+  height: inherit;
 }
 
 .un_pagetop_arrow {
   position: absolute;
   z-index: 1;
-  top: calc(50% + 0.2666666667vw);
+  top: 50%;
   left: 50%;
+  width: 1.6vw;
+  height: 1.8666666667vw;
   transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
   .un_pagetop_arrow {
-    top: calc(50% + min(0.0732064422vw, 1px));
+    width: min(0.5856515373vw, 8px);
+    height: min(0.7320644217vw, 10px);
   }
 }
 .un_pagetop_arrow svg {
   display: flex;
-  width: 1.6vw;
-  height: 1.8666666667vw;
-}
-@media (min-width: 768px) {
-  .un_pagetop_arrow svg {
-    width: min(0.5856515373vw, 8px);
-    height: min(0.7320644217vw, 10px);
-  }
+  width: inherit;
+  height: inherit;
 }
 
 .un_pagetop_txt {
@@ -619,34 +623,24 @@
 }
 .bl_introduction .el_link_icon {
   position: relative;
-  width: 4.6666666667vw;
+  top: -0.9333333333vw;
 }
 @media (min-width: 768px) {
   .bl_introduction .el_link_icon {
-    width: min(1.4641288433vw, 20px);
+    top: 0;
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) {
   .bl_introduction .el_circle_deg {
     position: relative;
-    top: min(0.0732064422vw, 1px);
-  }
-  .bl_introduction .el_circle_deg svg {
     width: min(1.4641288433vw, 20px);
     height: min(1.4641288433vw, 20px);
   }
 }
-@media (min-width: 768px) {
-  .bl_introduction .el_arrow_deg {
-    top: calc(50% + min(0.1464128843vw, 2px));
-  }
-  .ff .bl_introduction .el_arrow_deg {
-    top: calc(50% + min(0.2196193265vw, 3px));
-  }
-  .bl_introduction .el_arrow_deg svg {
-    width: min(0.2928257687vw, 4px);
-    height: min(0.2928257687vw, 4px);
-  }
+.bl_introduction .el_arrow_deg svg {
+  width: min(0.2928257687vw, 4px);
+  height: min(0.2928257687vw, 4px);
 }
 
 /* --------------------------------

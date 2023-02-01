@@ -316,39 +316,38 @@ $path: "../img/";
 }
 
 .el_link_icon {
+  display: flex;
   position: relative;
   margin-top: vw(-4);
-  width: vw(36);
 
   @include breakpoint-up(md) {
     margin-top: liq(-4);
-    width: liq(22);
   }
 }
 
 .el_circle_deg {
-  svg {
-    width: vw(35);
-    height: vw(35);
-    overflow: visible;
+  display: flex;
+  width: vw(35);
+  height: vw(35);
 
-    @include breakpoint-up(md) {
-      width: liq(22);
-      height: liq(22);
-    }
+  @include breakpoint-up(md) {
+    width: liq(22);
+    height: liq(22);
+  }
+
+  svg {
+    overflow: visible;
+    width: inherit;
+    height: inherit;
   }
 }
 
 .el_arrow_deg {
   display: flex;
   position: absolute;
-  top: calc(50% + vw(3));
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  @include breakpoint-up(md) {
-    top: calc(50% + liq(2));
-  }
 
   svg {
     width: vw(9);
