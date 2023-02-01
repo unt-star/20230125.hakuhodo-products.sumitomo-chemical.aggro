@@ -580,6 +580,7 @@
   padding: 2.9333333333vw 5.3333333333vw 2.6666666667vw;
   border: 1px solid #fff;
   text-align: center;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .bl_introduction .un_introduction_link {

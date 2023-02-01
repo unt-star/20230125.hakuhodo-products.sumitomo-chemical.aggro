@@ -555,6 +555,7 @@ $path: "../img/";
     padding: vw(22) vw(40) vw(20);
     text-align: center;
     border: 1px solid #fff;
+    text-decoration: none;
 
     @include breakpoint-up(md) {
       align-items: center;
