@@ -216,7 +216,7 @@ $path: "../img/";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: vw(16) vw(50) vw(24);
+  padding: vw(28) vw(50) vw(24);
   text-align: center;
   text-decoration: none;
   background-color: rgba($color-dark-blue, 0.3);
@@ -307,6 +307,7 @@ $path: "../img/";
 }
 
 .un_pagetop_txt {
+  margin-top: vw(6);
   font-size: vw(24);
   line-height: lh(24, 32);
   color: $color-white;

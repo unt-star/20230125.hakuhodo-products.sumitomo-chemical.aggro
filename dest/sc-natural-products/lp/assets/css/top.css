@@ -214,7 +214,7 @@
   z-index: 5;
   right: 2.6666666667vw;
   bottom: 2.6666666667vw;
-  padding: 2.1333333333vw 6.6666666667vw 3.2vw;
+  padding: 3.7333333333vw 6.6666666667vw 3.2vw;
   transition: opacity 0.3s linear, visibility 0.3s linear;
   background-color: rgba(55, 69, 89, 0.3);
   text-align: center;
@@ -296,6 +296,7 @@
 }
 
 .un_pagetop_txt {
+  margin-top: 0.8vw;
   transition: opacity 0.3s linear;
   color: #fff;
   font-size: 3.2vw;
