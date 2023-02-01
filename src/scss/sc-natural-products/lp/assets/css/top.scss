@@ -326,28 +326,27 @@ $path: "../img/";
   kv
 -------------------------------- */
 .section_kv {
-  height: vw(1260);
-  // height: 100vh;
+  height: vw(1621);
   background-image: url(#{$path}pic_kv_sm.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @include breakpoint-up(md) {
-    height: vw(740, 1366);
+    height: vw(739, 1366);
     background-image: url(#{$path}pic_kv_lg.jpg);
   }
 }
 
 .un_kv_txt_cont {
   position: absolute;
-  top: calc(50% + vw(86));
-  left: calc(50% - vw(24));
+  top: calc(50% + vw(90));
+  left: calc(50% + vw(8));
   transform: translate(-50%, -50%);
 
   @include breakpoint-up(md) {
-    top: calc(50% + vw(92, 1366));
-    left: calc(50% - vw(96, 1366));
+    top: calc(50% + vw(40, 1366));
+    left: calc(50% - vw(116, 1366));
   }
 }
 
@@ -362,10 +361,10 @@ $path: "../img/";
 }
 
 .bl_kv_catch_txt+.bl_kv_catch_txt {
-  margin-top: vw(26);
+  margin-top: vw(36);
 
   @include breakpoint-up(md) {
-    margin-top: vw(30, 1366);
+    margin-top: vw(18, 1366);
   }
 }
 
@@ -373,7 +372,7 @@ $path: "../img/";
   width: vw(333);
 
   @include breakpoint-up(md) {
-    width: vw(240, 1366);
+    width: vw(271, 1366);
   }
 }
 
@@ -381,7 +380,7 @@ $path: "../img/";
   width: vw(199);
 
   @include breakpoint-up(md) {
-    width: vw(431, 1366);
+    width: vw(486, 1366);
   }
 }
 
@@ -390,26 +389,49 @@ $path: "../img/";
 }
 
 .un_kv_txt {
-  margin-top: vw(110);
-  width: vw(582);
+  margin-top: vw(99);
+  margin-left: vw(-4);
   opacity: 0;
 
   @include breakpoint-up(md) {
-    margin-top: vw(60, 1366);
-    margin-left: vw(4, 1366);
-    width: vw(404, 1366);
+    margin-top: vw(40, 1366);
+    margin-left: 0;
+  }
+}
+
+.un_kv_txt+.un_kv_txt {
+  margin-top: vw(80);
+
+  @include breakpoint-up(md) {
+    margin-top: liq(38);
+  }
+}
+
+.un_kv_txt_01 {
+  width: vw(644);
+
+  @include breakpoint-up(md) {
+    width: vw(338, 1366);
+  }
+}
+
+.un_kv_txt_02 {
+  width: vw(587);
+
+  @include breakpoint-up(md) {
+    width: vw(512, 1366);
   }
 }
 
 .un_kv_caution {
-  margin-top: vw(154);
+  margin-top: vw(98);
   padding-left: vw(5);
   color: #fff;
   opacity: 0;
 
   @include breakpoint-up(md) {
-    margin-top: vw(90, 1366);
-    padding-left: liq(4);
+    margin-top: vw(125, 1366);
+    padding-left: 0;
   }
 
   .bl_caution_list {
@@ -442,7 +464,7 @@ $path: "../img/";
   align-items: center;
   position: absolute;
   z-index: 3;
-  top: calc(50% + vw(68));
+  top: calc(50% - vw(74));
   right: vw(15);
   transform: translateY(-50%) ;
   writing-mode: vertical-rl;
@@ -507,6 +529,7 @@ $path: "../img/";
     height: 100%;
   }
 }
+
 
 .bl_introduction {
   display: flex;
