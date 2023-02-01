@@ -552,7 +552,7 @@ $path: "../img/";
   .un_introduction_link {
     display: inline-flex;
     align-items: flex-end;
-    padding: vw(24) vw(40) vw(20);
+    padding: vw(22) vw(40) vw(20);
     text-align: center;
     border: 1px solid #fff;
 
@@ -605,7 +605,7 @@ $path: "../img/";
   }
 
   .el_link_icon {
-    margin-bottom: vw(7);
+    margin-bottom: vw(8);
 
     @include breakpoint-up(md) {
       margin-bottom: 0;
