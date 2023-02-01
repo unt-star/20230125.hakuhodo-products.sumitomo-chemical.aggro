@@ -286,6 +286,7 @@ $path: "../img/";
 }
 
 .un_pagetop_arrow {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -300,7 +301,6 @@ $path: "../img/";
   }
 
   svg {
-    display: flex;
     width: inherit;
     height: inherit;
   }
@@ -540,7 +540,7 @@ $path: "../img/";
   justify-content: center;
   align-items: center;
   padding-top: vw(110);
-  padding-bottom: vw(114);
+  padding-bottom: vw(110);
   background-color: #26361C;
 
   @include breakpoint-up(md) {
@@ -551,13 +551,13 @@ $path: "../img/";
   .un_introduction_link {
     display: inline-flex;
     align-items: flex-end;
-    padding: vw(24) vw(40) vw(18);
+    padding: vw(24) vw(40) vw(20);
     text-align: center;
     border: 1px solid #fff;
 
     @include breakpoint-up(md) {
       align-items: center;
-      padding: liq(9) liq(16) liq(9);
+      padding: liq(9) liq(16);
 
       &:hover {
         .un_introduction_link_txt {
@@ -604,12 +604,10 @@ $path: "../img/";
   }
 
   .el_link_icon {
-    position: relative;
-    top: vw(-7);
+    margin-bottom: vw(7);
 
     @include breakpoint-up(md) {
-      margin-top: 0;
-      top: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -618,12 +616,14 @@ $path: "../img/";
       position: relative;
       width: liq(20);
       height: liq(20);
-
     }
   }
 
   .el_arrow_deg {
-    svg {
+    width: vw(9);
+    height: vw(9);
+
+    @include breakpoint-up(md) {
       width: liq(4);
       height: liq(4);
     }

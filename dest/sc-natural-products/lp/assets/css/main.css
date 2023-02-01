@@ -597,12 +597,11 @@ a[href^="tel:"]:hover {
 .el_link_icon {
   display: flex;
   position: relative;
-  margin-top: -0.5333333333vw;
 }
-@media (min-width: 768px) {
-  .el_link_icon {
-    margin-top: max(-0.2928257687vw, -4px);
-  }
+.el_link_icon svg {
+  overflow: visible;
+  width: inherit;
+  height: inherit;
 }
 
 .el_circle_deg {
@@ -616,26 +615,18 @@ a[href^="tel:"]:hover {
     height: min(1.6105417277vw, 22px);
   }
 }
-.el_circle_deg svg {
-  overflow: visible;
-  width: inherit;
-  height: inherit;
-}
 
 .el_arrow_deg {
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-.el_arrow_deg svg {
-  overflow: visible;
   width: 1.2vw;
   height: 1.2vw;
+  transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
-  .el_arrow_deg svg {
+  .el_arrow_deg {
     width: min(0.439238653vw, 6px);
     height: min(0.439238653vw, 6px);
   }

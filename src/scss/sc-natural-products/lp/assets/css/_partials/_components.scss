@@ -318,10 +318,11 @@ $path: "../img/";
 .el_link_icon {
   display: flex;
   position: relative;
-  margin-top: vw(-4);
 
-  @include breakpoint-up(md) {
-    margin-top: liq(-4);
+  svg {
+    overflow: visible;
+    width: inherit;
+    height: inherit;
   }
 }
 
@@ -334,12 +335,6 @@ $path: "../img/";
     width: liq(22);
     height: liq(22);
   }
-
-  svg {
-    overflow: visible;
-    width: inherit;
-    height: inherit;
-  }
 }
 
 .el_arrow_deg {
@@ -348,16 +343,12 @@ $path: "../img/";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: vw(9);
+  height: vw(9);
 
-  svg {
-    width: vw(9);
-    height: vw(9);
-    overflow: visible;
-
-    @include breakpoint-up(md) {
-      width: liq(6);
-      height: liq(6);
-    }
+  @include breakpoint-up(md) {
+    width: liq(6);
+    height: liq(6);
   }
 }
 
