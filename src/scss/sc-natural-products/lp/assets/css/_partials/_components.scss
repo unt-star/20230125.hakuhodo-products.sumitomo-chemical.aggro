@@ -328,8 +328,8 @@ $path: "../img/";
 
 .el_circle_deg {
   display: flex;
-  width: vw(35);
-  height: vw(35);
+  width: vw(34);
+  height: vw(34);
 
   @include breakpoint-up(md) {
     width: liq(22);

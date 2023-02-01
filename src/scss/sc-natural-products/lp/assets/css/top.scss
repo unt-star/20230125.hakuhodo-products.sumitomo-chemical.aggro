@@ -606,7 +606,7 @@ $path: "../img/";
   }
 
   .el_link_icon {
-    margin-bottom: vw(8);
+    margin-bottom: vw(5);
 
     @include breakpoint-up(md) {
       margin-bottom: 0;

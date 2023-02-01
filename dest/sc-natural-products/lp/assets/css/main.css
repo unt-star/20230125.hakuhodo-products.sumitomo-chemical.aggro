@@ -606,8 +606,8 @@ a[href^="tel:"]:hover {
 
 .el_circle_deg {
   display: flex;
-  width: 4.6666666667vw;
-  height: 4.6666666667vw;
+  width: 4.5333333333vw;
+  height: 4.5333333333vw;
 }
 @media (min-width: 768px) {
   .el_circle_deg {
