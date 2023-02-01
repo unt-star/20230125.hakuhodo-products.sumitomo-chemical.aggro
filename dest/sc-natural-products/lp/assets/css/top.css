@@ -258,6 +258,7 @@
 }
 
 .un_pagetop_circle svg {
+  overflow: visible;
   width: 4.8vw;
 }
 @media (min-width: 768px) {

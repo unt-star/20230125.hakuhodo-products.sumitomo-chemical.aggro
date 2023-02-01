@@ -271,6 +271,7 @@ $path: "../img/";
 .un_pagetop_circle {
   svg {
     width: vw(36);
+    overflow: visible;
 
     @include breakpoint-up(md) {
       width: liq(18);
