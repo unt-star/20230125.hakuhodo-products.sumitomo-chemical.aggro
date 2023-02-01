@@ -588,6 +588,15 @@ $path: "../img/";
       font-size: liq(16);
       line-height: lh(16, 30);
     }
+
+    > span {
+      display: inline-block;
+      margin-left: vw(50);
+
+      @include breakpoint-up(md) {
+        margin-left: 0;
+      }
+    }
   }
 
   .el_link_icon {
