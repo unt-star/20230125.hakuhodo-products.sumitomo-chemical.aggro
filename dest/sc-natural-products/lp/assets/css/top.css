@@ -612,6 +612,11 @@
   display: inline-block;
   margin-left: 6.6666666667vw;
 }
+@media (min-width: 768px) {
+  .bl_introduction .un_introduction_link_txt > span {
+    margin-left: 0;
+  }
+}
 .bl_introduction .el_link_icon {
   position: relative;
   width: 4.6666666667vw;
