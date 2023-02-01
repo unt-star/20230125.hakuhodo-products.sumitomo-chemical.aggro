@@ -328,8 +328,8 @@ $path: "../img/";
 
 .el_circle_deg {
   svg {
-    width: vw(34);
-    height: vw(34);
+    width: vw(35);
+    height: vw(35);
     overflow: visible;
 
     @include breakpoint-up(md) {
@@ -342,7 +342,7 @@ $path: "../img/";
 .el_arrow_deg {
   display: flex;
   position: absolute;
-  top: calc(50% + vw(2));
+  top: calc(50% + vw(3));
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -351,8 +351,8 @@ $path: "../img/";
   }
 
   svg {
-    width: vw(10);
-    height: vw(10);
+    width: vw(9);
+    height: vw(9);
     overflow: visible;
 
     @include breakpoint-up(md) {

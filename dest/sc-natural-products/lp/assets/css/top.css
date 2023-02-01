@@ -627,9 +627,6 @@
     height: min(1.4641288433vw, 20px);
   }
 }
-.bl_introduction .el_arrow_deg {
-  top: calc(50% + 0.5333333333vw);
-}
 @media (min-width: 768px) {
   .bl_introduction .el_arrow_deg {
     top: calc(50% + min(0.1464128843vw, 2px));
@@ -793,7 +790,7 @@
 }
 @media (min-width: 768px) {
   .un_bt_agent_txt_cont {
-    margin-top: min(1.4641288433vw, 20px);
+    margin-top: min(0.2928257687vw, 4px);
   }
 }
 

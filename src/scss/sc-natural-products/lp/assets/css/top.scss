@@ -612,7 +612,6 @@ $path: "../img/";
   }
 
   .el_arrow_deg {
-    top: calc(50% + vw(4));
 
     @include breakpoint-up(md) {
       top: calc(50% + liq(2));
@@ -771,7 +770,7 @@ $path: "../img/";
   margin-top: vw(24);
 
   @include breakpoint-up(md) {
-    margin-top: liq(20);
+    margin-top: liq(4);
   }
 }
 
