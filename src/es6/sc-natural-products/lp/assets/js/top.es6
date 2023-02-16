@@ -22,6 +22,7 @@
         kv_anim();
         pageTop();
         fadeUp();
+        modal();
       });
     };
 
@@ -131,6 +132,22 @@
           onLeaveBack: () => {
             target.classList.remove('absolute');
           },
+        }
+      });
+    };
+
+    const modal = () => {
+      MicroModal.init({
+        disableFocus: true,
+        awaitOpenAnimation: true,
+        awaitCloseAnimation: true,
+        disableScroll: true,
+        onClose: (e) => {
+          if(e.querySelector('video')) {
+            Array.from(e.querySelectorAll('video')).forEach((el) => {
+              el.pause();
+            });
+          }
         }
       });
     };

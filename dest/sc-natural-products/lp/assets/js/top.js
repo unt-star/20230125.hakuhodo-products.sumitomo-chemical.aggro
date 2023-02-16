@@ -20,6 +20,7 @@
         kv_anim();
         pageTop();
         fadeUp();
+        modal();
       });
     };
 
@@ -128,6 +129,22 @@
           },
           onLeaveBack: function onLeaveBack() {
             target.classList.remove('absolute');
+          }
+        }
+      });
+    };
+
+    var modal = function modal() {
+      MicroModal.init({
+        disableFocus: true,
+        awaitOpenAnimation: true,
+        awaitCloseAnimation: true,
+        disableScroll: true,
+        onClose: function onClose(e) {
+          if (e.querySelector('video')) {
+            Array.from(e.querySelectorAll('video')).forEach(function (el) {
+              el.pause();
+            });
           }
         }
       });
