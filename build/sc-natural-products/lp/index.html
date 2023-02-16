@@ -46,8 +46,7 @@
 
   <!-- lib -->
   <script src="./assets/js/vendor/jquery-3.6.0.min.js" defer="defer"></script>
-
-  <!-- <script src="./assets/js/vendor/micromodal.min.js" defer></script> -->
+  <script src="./assets/js/vendor/micromodal.min.js" defer="defer"></script>
   <script src="./assets/js/vendor/gsap-3.11.3.min.js" defer="defer"></script>
   <script src="./assets/js/vendor/gsap-scrollTrigger-3.11.3.min.js" defer="defer"></script>
   <script src="./assets/js/main.js" defer="defer"></script>
@@ -62,7 +61,7 @@
             <source srcset="./assets/img/pic_logo_sumitomo_chemical_lg.png" width="141" height="27" media="(min-width: 768px)"><img src="./assets/img/pic_logo_sumitomo_chemical_sm.png" width="109" height="27" alt="住友化学株式会社">
           </picture>
         </a></h1>
-      <p class="bl_header_logo un_header_logo_natural_products bl_imgWrapper"><a href="./">
+      <p class="bl_header_logo un_header_logo_natural_products bl_imgWrapper"><a href="https://www.sc-natural-products.com" target="_blank" rel="noopener">
           <picture>
             <source srcset="./assets/img/pic_logo_natural_products_lg.png" width="100" height="36" media="(min-width: 768px)"><img src="./assets/img/pic_logo_natural_products_sm.png" width="69" height="27" alt="Natural Products">
           </picture>
@@ -223,7 +222,21 @@
                           </g>
                         </svg></span></span></span></span></a>
             </li>
+          </ul><br>
+          <ul class="bl_caution un_bt_agents">
+            <li class="bl_caution_list">有効成分に天然物を使用しております。天然物は自然界に存在する物質や微生物およびその生産物を指します。</li>
           </ul>
+        </div>
+      </section>
+      <section class="un_bt_video">
+        <div class="ly_cont">
+          <div class="bl_contents_ttl_cont">
+            <h3 class="bl_contents_ttl">BT剤の作用について</h3>
+          </div><a href="#" class="bl_videoWrapper un_bt_video_cont" data-micromodal-trigger="modal_bt_agents">
+            <picture>
+              <source srcset="./assets/img/thumb_bt_lg.jpg" width="1000" height="350" media="(min-width: 768px)"><img src="./assets/img/thumb_bt_sm.jpg" width="327" height="180" alt="">
+            </picture>
+          </a>
         </div>
       </section>
     </main><a href="#top" class="un_pagetop js_pagetop"><span class="un_pagetop_icon"><span class="un_icon_pagetop"><span class="un_pagetop_circle"><svg viewBox="0 0 36.776 36.776">
@@ -246,5 +259,22 @@
     </div>
     <div class="un_footer_bottom"><small class="un_footer_copy">Copyright&copy;&nbsp;2002-2023&nbsp;Sumitomo&nbsp;Chemical&nbsp;Co.,&nbsp;Ltd.</small></div>
   </footer>
+  <div id="modal_bt_agents" class="bl_video_modal" aria-hidden="true">
+    <div tabindex="-1" data-micromodal-close>
+      <div role="dialog">
+        <div class="bl_video_modal_inner">
+          <div class="bl_video_modal_contents">
+            <div class="bl_video_modal_head"><button class="bl_video_modal_close js_modal_close bl_imgWrapper" aria-label="Close modal" data-micromodal-close><img src="./assets/img/icon_modal_close_lg.png" width="32" height="32" alt=""></button></div>
+            <div class="bl_video_container">
+              <div class="bl_video_modal_slide">
+                <div class="u-hidden-up-md"><video src="./assets/movie/video_bt.mp4" muted controls poster="./assets/img/thumb_bt_sm.jpg"></video></div>
+                <div class="u-hidden-down-sm"><video src="./assets/movie/video_bt.mp4" muted controls poster="./assets/img/thumb_bt_lg.jpg"></video></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
