@@ -731,13 +731,13 @@
 -------------------------------- */
 .section_bt_agent {
   padding-top: 25.3333333333vw;
-  padding-bottom: 26.6666666667vw;
+  padding-bottom: 28.5333333333vw;
   background-color: #bad3d7;
 }
 @media (min-width: 768px) {
   .section_bt_agent {
     padding-top: min(11.5666178624vw, 158px);
-    padding-bottom: min(12.8843338214vw, 176px);
+    padding-bottom: min(13.4699853587vw, 184px);
   }
 }
 
@@ -775,10 +775,12 @@
 
 .un_bt_agent_contents {
   margin-top: 13.6vw;
+  padding-bottom: 17.3333333333vw;
 }
 @media (min-width: 768px) {
   .un_bt_agent_contents {
     margin-top: min(5.8565153734vw, 80px);
+    padding-bottom: min(7.027818448vw, 96px);
   }
 }
 
@@ -813,7 +815,7 @@
 @media (min-width: 768px) {
   .section_bt_products {
     padding-top: min(11.5666178624vw, 158px);
-    padding-bottom: min(7.3206442167vw, 100px);
+    padding-bottom: min(13.4699853587vw, 184px);
   }
 }
 
@@ -939,15 +941,6 @@
 /* --------------------------------
   bt剤 動画
 -------------------------------- */
-.un_bt_video {
-  padding-bottom: 29.3333333333vw;
-}
-@media (min-width: 768px) {
-  .un_bt_video {
-    padding-bottom: min(13.9092240117vw, 190px);
-  }
-}
-
 .un_bt_video_cont {
   display: block;
   margin-top: 7.4666666667vw;

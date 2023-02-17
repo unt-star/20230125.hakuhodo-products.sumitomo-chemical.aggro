@@ -488,6 +488,10 @@ a[href^="tel:"]:hover {
   }
 }
 
+.bl_contents_ttl_blue::before {
+  background-image: url(../img/icon_contents_ttl_blue.svg);
+}
+
 .bl_imgWrapper img {
   width: 100%;
   max-width: 100%;

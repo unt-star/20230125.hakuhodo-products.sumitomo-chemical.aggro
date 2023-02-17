@@ -196,6 +196,12 @@ $path: "../img/";
   }
 }
 
+.bl_contents_ttl_blue {
+  &::before {
+    background-image: url(#{$path}icon_contents_ttl_blue.svg);
+  }
+}
+
 // images
 .bl_imgWrapper {
   img {

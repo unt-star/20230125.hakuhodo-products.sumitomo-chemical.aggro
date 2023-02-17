@@ -712,12 +712,12 @@ $path: "../img/";
 
 .section_bt_agent {
   padding-top: vw(190);
-  padding-bottom: vw(200);
+  padding-bottom: vw(214);
   background-color: $color-light-cyan;
 
   @include breakpoint-up(md) {
     padding-top: liq(158);
-    padding-bottom: liq(176);
+    padding-bottom: liq(184);
   }
 }
 
@@ -752,9 +752,11 @@ $path: "../img/";
 
 .un_bt_agent_contents {
   margin-top: vw(102);
+  padding-bottom: vw(130);
 
   @include breakpoint-up(md) {
     margin-top: liq(80);
+    padding-bottom: liq(96);
   }
 }
 
@@ -789,7 +791,7 @@ $path: "../img/";
 
   @include breakpoint-up(md) {
     padding-top: liq(158);
-    padding-bottom: liq(100);
+    padding-bottom: liq(184);
   }
 }
 
@@ -916,13 +918,6 @@ $path: "../img/";
 /* --------------------------------
   bt剤 動画
 -------------------------------- */
-.un_bt_video {
-  padding-bottom: vw(220);
-
-  @include breakpoint-up(md) {
-    padding-bottom: liq(190);
-  }
-}
 
 .un_bt_video_cont {
   display: block;
